@@ -14,3 +14,8 @@ begin
 end;
 $$ language plpgsql;
 
+
+select * from consulta5()
+
+select * from hospedagem
+
