@@ -27,7 +27,7 @@ FROM
 					hospedagem
 					INNER JOIN hospede on hospedagem.codHospede = hospede.codHospede
 					WHERE
-						date_part('year', hospedagem.dataEntrada) - date_part('year', hospede.datanascimento) BETWEEN 20 and 30
+						date_part('year', hospedagem.dataEntrada) - date_part('year', hospede.datanascimento) BETWEEN 40 and 45
 				)
 			AND c.dataEntrada <=(
 				SELECT
@@ -36,7 +36,7 @@ FROM
 					hospedagem
 					INNER JOIN hospede on hospedagem.codHospede = hospede.codHospede
 				WHERE
-					date_part('year', hospedagem.dataEntrada)- date_part('year', hospede.datanascimento) BETWEEN 20 and 30
+					date_part('year', hospedagem.dataEntrada)- date_part('year', hospede.datanascimento) BETWEEN 40 and 45
 			)
         GROUP BY
             A.nome,
