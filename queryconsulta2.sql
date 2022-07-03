@@ -21,7 +21,3 @@ AND
 	
 GROUP BY hospedagem.datasaida, atendente.nome
 ORDER BY Mês, Ano, datasaida ASC
-
-select * from atendente
-
-
